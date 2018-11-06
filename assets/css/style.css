@@ -46,7 +46,19 @@ label {
     text-align: center;
 }
 
+input {
+    max-width: 100%;
+    width: 650px;
+    font-size: 30px;
+}
 
+#search {
+    max-width: 100%;
+    width: 650px;
+    font-size: 30px;
+    background: #182837;
+    color: white;
+}
 
 /*
  * -- PURE FORM STYLES --
@@ -175,7 +187,7 @@ a.pure-button-primary {
 .splash-subhead {
     color: #182837;
     letter-spacing: 0.05em;
-    font-weight: 500;
+    font-weight: 900;
 }
 
 /*
@@ -224,7 +236,23 @@ a.pure-button-primary {
 .ribbon {
     background: #2d3e50;
     color: #aaa;
+    margin: auto;
 }
+
+/* This is the class used for the developer image */
+.developer-image {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+/* This is the class used for the developer name */
+.developer-name {
+    text-align: center;
+    color: #182837;
+    font-size: 14px;
+}
+
 
 /* This is the class used for the footer */
 .footer {
@@ -279,6 +307,16 @@ a.pure-button-primary {
 
 }
 
+.footer {
+    background: #182837;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.credit {
+    font-size: 5px;
+}
 /*
  * -- DESKTOP (AND UP) MEDIA QUERIES --
  * On desktops and other large devices, we want to over-ride some
