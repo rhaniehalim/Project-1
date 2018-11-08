@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Using TheMovieDB</title>
+    <meta name="viewport" content="width=device-width">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>TheMovieDB.org API</h1>
+    <p><img src="" alt="" /></p>
+    <div id="output">
+        <button id="searchButton">Search Me!</button>
+        <!-- output will go here -->
+    </div>
+    <div id="movieHere"></div>
+
+    <!-- <script src="key.js"></script> -->
+    <script>
+        // var movieID = "597-titanic";
+        var NmovieID = ["2270-stardust", "10386-the-iron-giant", "11216-nuovo-cinema-paradiso", "1265-bridge-to-terabithia", "34584-the-neverending-story"];
+
+        $("#searchButton").on("click", function () {
+            var randomNumber = Math.floor((Math.random() * movieID.length) + 1);
+            var randomMovie = NmovieID[randomNumber];
+
+            var queryurl = "https://api.themoviedb.org/3/movie/" + randomMovie + "?api_key=d24732c07f760d728b453feb58faf3ec";
+
+            $.ajax({
+                url: queryurl,
+                method: 'GET',
+            }).done(function (result) {
+                console.log(result);
+                console.log(result.original_title);
+                console.log(result.overview);
+                console.log(result.poster_path);
+
+                var NmovieDiv = $("<div>");
+                var title = $("<p>").text("Title: " + result.original_title);
+                var description = $("<p>").text("Description: " + result.overview);
+
+                var NmoviePoster = $("<img>");
+                NmoviePoster.attr("src", "https://image.tmdb.org/t/p/w600_and_h900_bestv2" + result.poster_path);
+
+                NmovieDiv.prepend(title);
+                NmovieDiv.prepend(description);
+                NmovieDiv.prepend(moviePoster);
+
+                $("#NmovieHere").prepend(movieDiv);
+
+            });
+        })
+       // .fail(function (err) {
+       //     throw err;
+       // });
+
+           // console.log(result);
+    </script>
+</body>
+
+</html>
