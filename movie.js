@@ -25,7 +25,7 @@ var NmovieID = ["2270-stardust", "10386-the-iron-giant", "11216-nuovo-cinema-par
                 NmovieDiv.prepend(title);
                 NmovieDiv.prepend(description);
                 NmovieDiv.prepend(NmoviePoster);
-                $("movieHolder").empty();
+                $("#movieHolder").empty();
                 $("#movieHolder").prepend(NmovieDiv);
 
             });

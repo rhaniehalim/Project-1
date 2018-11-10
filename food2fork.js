@@ -2,7 +2,7 @@ $("#userInput").on("submit", function(e) {
   e.preventDefault();
   var userInput = $("#ingredient").val().trim();
   $.ajax({
-    url: "https://www.food2fork.com/api/search?key=fb6b4f9634df7b544d284e2cd03ff3c1&q=" + userInput,
+    url: "https://www.food2fork.com/api/search?key=c1ff047cef70acdb82d3f056695e5c23&q=" + userInput,
     method: "GET"
   }).then(function(result) {
     var resultObj = jQuery.parseJSON(result); 
@@ -43,7 +43,7 @@ $("#userInput").on("submit", function(e) {
   recipesDiv.append(socialRankDisp);
 
   var sourceurl= resultObj.recipes[i].source_url;
-  var sourceurlDisp= $("<p>").text("Source URL: " + sourceurl);
+  var sourceurlDisp= $("<a href =>").text("Source URL: " + sourceurl);
   recipesDiv.append(sourceurlDisp);
   $("#recipesHolder").prepend(recipesDiv);
 }
