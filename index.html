@@ -30,18 +30,11 @@
     <div class="splash-container">
         <div class="splash">
             <h1 class="splash-head">SCROLL LESS. <br>RELAX MORE.
-                <form class="add-form">
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect1">Please select one of the following protein:</label>
-                        <select class="form-control" id="dropdown-text" required>
-                            <option>Beef</option>
-                            <option>Chicken</option>
-                            <option>Fish</option>
-                        </select>
-                    </div>
-                    <button id="steak-submit" type="submit">SEARCH</button>
-                </form>
-            </h1>
+            <form id="userInput">
+                <input type="text" class="form-control form-field" id="ingredient">
+                <button type="submit" > search </button>
+            </form>
+</h1>
             <p class="splash-subhead">
                 A hassle-free way to enjoy your night in.
             </p>
@@ -55,7 +48,7 @@
                 <!--MEAL AND MOVIE CONTENT SHOULD BE HIDDEN UNTIL SUBMIT BUTTON IS PRESSED-->
                 <h1 class="content-head is-center"><img src="assets/images/movie.png">&emsp; MEAL SUGGESTIONS:</h1>
                 <div class="pure-g">
-                    <div id="recipeholder">
+                    <div id="recipesHolder">
                         <h2 class="food-title is-center">
                             <!--Recipe title goes here-->
                         </h2>
@@ -75,149 +68,154 @@
                     </div>
                 </div>
             </div>
-        
 
-        <h1 class="content-head is-center"><img src="assets/images/movie.png">&emsp; MOVIE SUGGESTIONS:</h1>
-        <div class="pure-g">
-            <div class="l-box-lrg pure-u-1 pure-u-md-1-2">
-                <h2 class="netflix-title is-center">
-                    <!--Movie title goes here-->
-                </h2>
-                <div class="netflix-image is-center">
-                    <!--Movie poster goes here-->
-                    <div class="netflix-description">
-                        <!--Movie description goes here-->
+
+            <h1 class="content-head is-center"><img src="assets/images/movie.png">&emsp; MOVIE SUGGESTIONS:</h1>
+            <div class="pure-g">
+                <div class="l-box-lrg pure-u-1 pure-u-md-1-2">
+                    <div id="movieHolder">
+                        <h2 class="netflix-title is-center">
+                            <!--Movie title goes here-->
+                        </h2>
+                        <div class="netflix-image is-center">
+                            <!--Movie poster goes here-->
+                            <div class="netflix-description">
+                                <!--Movie description goes here-->
+                                <button id="netflix-submit"> Go to Netflix</button>
+                            </div>
+                        </div>
+
+
+                        <div class="l-box-lrg pure-u-1 pure-u-md-1-2">
+                            <h2 class="netflix-title is-center">
+                                <!--Movie title goes here-->
+                            </h2>
+                            <div class="amazon-image is-center">
+                                <!--Movie poster goes here-->
+                                <div class="amazon-description">
+                                    <!--Movie description goes here-->
+                                    <button id="amazon-submit"> Go to Amazon</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <h2 class="content-head is-center">Find your favourite recipes and movies all in one app</h2>
+                <div class="pure-g">
+                    <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+
+                        <h3 class="content-subhead">
+                            <img src="assets/images/project.png">
+                            Get Started Quickly
+                        </h3>
+                        <p>
+                            We search the best recipe out there so you don't have to. Just relax and enjoy the
+                            movie.
+                        </p>
+                    </div>
+                    <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+                        <h3 class="content-subhead">
+                            <img src="assets/images/smartphone.png">
+                            Responsive Layouts
+                        </h3>
+                        <p>
+                            Whether if you're on your desktop, or on-the-go, our responsive layout will make life a
+                            bit
+                            easier for you.
+                        </p>
+                    </div>
+                    <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
+                        <h3 class="content-subhead">
+                            <img src="assets/images/github.png">
+                            Github
+                        </h3>
+                        <p>
+                            Our developers are continuously creating great apps. Follow our journey.
+                        </p>
+                    </div>
+
+                </div>
             </div>
 
-            <div class="l-box-lrg pure-u-1 pure-u-md-1-2">
-                <h2 class="netflix-title is-center">
-                    <!--Movie title goes here-->
-                </h2>
-                <div class="amazon-image is-center">
-                    <!--Movie poster goes here-->
-                    <div class="amazon-description">
-                        <!--Movie description goes here-->
+            <div class="ribbon l-box-lrg pure-g">
+                <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+                    <img width="150" alt="File Icons" class="pure-img-responsive" src="assets/images/cooking.png">
+                </div>
+                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+
+                    <h2 class="content-head content-head-ribbon">Can't decide?</h2>
+
+                    <p>
+                        Don't worry, we have your back. Click our search button and it'll randomize the choices for
+                        you,
+                        whether if you're feeling spontaneous or just tired of calling the shots for the day. We'll
+                        take
+                        care of you.
+                    </p>
+                </div>
+            </div>
+
+            <div class="content">
+                <h2 class="content-head is-center">support & services</h2>
+
+                <div class="pure-g">
+                    <div class="l-box-lrg pure-u-1 pure-u-md-1-2">
+                        <h4>Technology Used</h4>
+                        <p>PURE.CSS</p>
+                        <p>CLICKY</p>
+                        <p>MOVIEAPITHING</p>
+                        <p>FOOD2FORK</p>
+                        <p>FLATICON<div class="credit">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a>
+                                from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is
+                                licensed
+                                by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+                                    target="_blank">CC
+                                    3.0 BY</a></div>
+
+                            <div class="credit">Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev"
+                                    title="Nikita Golubev">Nikita
+                                    Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                                is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+                                    target="_blank">CC 3.0 BY</a></div>
+                        </p>
+                    </div>
+
+                    <div class="l-box-lrg pure-u-1 pure-u-md-1-2">
+                        <h4>Developers</h4>
+                        <div class="l-box-lrg pure-u-1 pure-u-sm-1-3 pure-u-md-1-5">
+                            <img src="assets/images/fatim.jpg" class="developer-image">
+                            <p class="developer-name">
+                                Fatim Robbins </p>
+                        </div>
+                        <div class="l-box-lrg pure-u-1 pure-u-sm-1-3 pure-u-md-1-5">
+                            <img src="assets/images/lisa.jpg" class="developer-image">
+                            <p class="developer-name">
+                                Lisa Robbins </p>
+                        </div>
+                        <div class="l-box-lrg pure-u-1 pure-u-sm-1-3 pure-u-md-1-5">
+                            <img src="assets/images/sarah.jpg" class="developer-image">
+                            <p class="developer-name">
+                                Sarah Barenz </p>
+                        </div>
+                        <div class="l-box-lrg pure-u-1 pure-u-sm-1-3 pure-u-md-1-5">
+                            <img src="assets/images/rhanie.jpg" class="developer-image">
+                            <p class="developer-name">
+                                Rhanie Halim </p>
+                        </div>
+
+                        <h4>Contact Us</h4>
+                        <p>
+                            Visit our GitHub page: <a href="https://github.com/rhaniehalim/Project-1">https://github.com/rhaniehalim/Project-1</a>
+                        </p>
                     </div>
                 </div>
+
             </div>
 
-        </div>
-        <h2 class="content-head is-center">Find your favourite recipes and movies all in one app</h2>
-        <div class="pure-g">
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
-
-                <h3 class="content-subhead">
-                    <img src="assets/images/project.png">
-                    Get Started Quickly
-                </h3>
-                <p>
-                    We search the best recipe out there so you don't have to. Just relax and enjoy the
-                    movie.
-                </p>
-            </div>
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
-                <h3 class="content-subhead">
-                    <img src="assets/images/smartphone.png">
-                    Responsive Layouts
-                </h3>
-                <p>
-                    Whether if you're on your desktop, or on-the-go, our responsive layout will make life a
-                    bit
-                    easier for you.
-                </p>
-            </div>
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
-                <h3 class="content-subhead">
-                    <img src="assets/images/github.png">
-                    Github
-                </h3>
-                <p>
-                    Our developers are continuously creating great apps. Follow our journey.
-                </p>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="ribbon l-box-lrg pure-g">
-        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
-            <img width="150" alt="File Icons" class="pure-img-responsive" src="assets/images/cooking.png">
-        </div>
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
-
-            <h2 class="content-head content-head-ribbon">Can't decide?</h2>
-
-            <p>
-                Don't worry, we have your back. Click our search button and it'll randomize the choices for
-                you,
-                whether if you're feeling spontaneous or just tired of calling the shots for the day. We'll
-                take
-                care of you.
-            </p>
-        </div>
-    </div>
-
-    <div class="content">
-        <h2 class="content-head is-center">support & services</h2>
-
-        <div class="pure-g">
-            <div class="l-box-lrg pure-u-1 pure-u-md-1-2">
-                <h4>Technology Used</h4>
-                <p>PURE.CSS</p>
-                <p>CLICKY</p>
-                <p>MOVIEAPITHING</p>
-                <p>FOOD2FORK</p>
-                <p>FLATICON<div class="credit">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a>
-                        from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is
-                        licensed
-                        by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
-                            3.0 BY</a></div>
-
-                    <div class="credit">Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita
-                            Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-                        is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
-                            target="_blank">CC 3.0 BY</a></div>
-                </p>
-            </div>
-
-            <div class="l-box-lrg pure-u-1 pure-u-md-1-2">
-                <h4>Developers</h4>
-                <div class="l-box-lrg pure-u-1 pure-u-sm-1-3 pure-u-md-1-5">
-                    <img src="assets/images/fatim.jpg" class="developer-image">
-                    <p class="developer-name">
-                        Fatim Robbins </p>
-                </div>
-                <div class="l-box-lrg pure-u-1 pure-u-sm-1-3 pure-u-md-1-5">
-                    <img src="assets/images/lisa.jpg" class="developer-image">
-                    <p class="developer-name">
-                        Lisa Robbins </p>
-                </div>
-                <div class="l-box-lrg pure-u-1 pure-u-sm-1-3 pure-u-md-1-5">
-                    <img src="assets/images/sarah.jpg" class="developer-image">
-                    <p class="developer-name">
-                        Sarah Barenz </p>
-                </div>
-                <div class="l-box-lrg pure-u-1 pure-u-sm-1-3 pure-u-md-1-5">
-                    <img src="assets/images/rhanie.jpg" class="developer-image">
-                    <p class="developer-name">
-                        Rhanie Halim </p>
-                </div>
-
-                <h4>Contact Us</h4>
-                <p>
-                    Visit our GitHub page: <a href="https://github.com/rhaniehalim/Project-1">https://github.com/rhaniehalim/Project-1</a>
-                </p>
+            <div class="footer l-box is-center">
+                COPYRIGHT © ALL CONTENT AND IMAGES BELONG TO THEIR RESPECTIVE OWNERS.
             </div>
         </div>
-
-    </div>
-
-    <div class="footer l-box is-center">
-        COPYRIGHT © ALL CONTENT AND IMAGES BELONG TO THEIR RESPECTIVE OWNERS.
-    </div>
-    </div>
 
     </div>
 
@@ -233,4 +231,5 @@
 </body>
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/javascript/food2fork.js">
+
 </html>
