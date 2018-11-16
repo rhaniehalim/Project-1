@@ -1,158 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A layout example that shows off a responsive product landing page.">
-    <title>MEAL & MOVIE</title>
-    <link rel="shortcut icon" href="assets/images/pizza.png" type="image/x-icon">
+    <title>Meal and a Movie</title>
     
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
+    <h1>Meal & Movie</h1>
+    <h3>Easy-click suggestions for at-home entertainment.</h3>
 
-
-
-
-
-
-
-
-<div class="header">
-    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-        <a class="pure-menu-heading" href="">MEAL & MOVIE</a>
-
-        <ul class="pure-menu-list">
-            <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Home</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Tour</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Sign Up</a></li>
-        </ul>
-    </div>
-</div>
-
-<div class="splash-container">
-    <div class="splash">
-        <h1 class="splash-head">SCROLL LESS. <br>RELAX MORE.</h1>
-        <p class="splash-subhead">
-            A hassle-free way to enjoy your night in.
-        </p>
-        <p>
-            <a href="thanksgiving.html" class="pure-button pure-button-primary">Get Started</a>
-        </p>
-    </div>
-</div>
-
-<div class="content-wrapper">
-    <div class="content">
-        <h2 class="content-head is-center">Find your favourite recipes and movies all in one app</h2>
-
-        <div class="pure-g">
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-
-                <h3 class="content-subhead">
-                    <img src="assets/images/project.png">
-                    Get Started Quickly
-                </h3>
-                <p>
-                    We search the best recipe out there so you don't have to. Just relax and enjoy the movie.
-                </p>
-            </div>
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <img src="assets/images/smartphone.png">
-                    Responsive Layouts
-                </h3>
-                <p>
-                    Whether if you're on your desktop, or on-the-go, our responsive layout will make life a bit easier for you. 
-                </p>
-            </div>
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                        <img src="assets/images/github.png">
-                    Github
-                </h3>
-                <p>
-                    Our developers are continuously creating great apps. Follow our journey.
-                </p>
-            </div>
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-check-square-o"></i>
-                    Plays Nice
-                </h3>
-                <p>
-                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="ribbon l-box-lrg pure-g">
-        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
-            <img width="150" alt="File Icons" class="pure-img-responsive" src="assets/images/cooking.png">
-        </div>
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
-
-            <h2 class="content-head content-head-ribbon">Can't decide?</h2>
-
-            <p>
-                Don't worry, we have your back. Click our randomize button when you're feeling spontaneous or just tired of calling the shots for the day. We'll take care of you.
-            </p>
-        </div>
-    </div>
-
-    <div class="content">
-        <h2 class="content-head is-center">support & services</h2>
-
-        <div class="pure-g">
-            <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
-                <form class="pure-form pure-form-stacked">
-                    <fieldset>
-
-                        <label for="name">Your Name</label>
-                        <input id="name" type="text" placeholder="Your Name">
-
-
-                        <label for="email">Your Email</label>
-                        <input id="email" type="email" placeholder="Your Email">
-
-                        <label for="password">Your Password</label>
-                        <input id="password" type="password" placeholder="Your Password">
-
-                        <button type="submit" class="pure-button">Sign Up</button>
-                    </fieldset>
-                </form>
-            </div>
-
-            <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
-                <h4>Developers</h4>
-                <p>
-                    Fatim Robbins <br>
-                    Lisa Jones <br>
-                    Sarah Barenz <br>
-                    Rhanie Halim <br>
-                </p>
-
-                <h4>Contact Us</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-            </div>
-        </div>
-
-    </div>
-
+    <h2>Meal?</h2>
+    <p>Beef? Fish? Vegetarian? Type a keyword and click for three recipe ideas.</p>
+    <form id="userInput"> 
+            <input type="text" class="form-control form-field" id="ingredient"> 
+            <button type= "submit"> search </button> 
+    </form>
     
 
-</div>
+    <div id="recipesHolder"></div>
 
+    <h2>Movie?</h2>
+    <p>Click for a movie to stream that's appropriate for all ages.</p>
+    <button id="netflix-submit"> Get something on Netflix </button>
+    <button id="amazon-submit"> Get something on Amazon Prime </button>
 
+    <div id="movieHolder"></div>
 
+       
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="food2fork.js"></script>
+    <script src="movie.js"></script>
+    <!--<link rel="stylesheet" type="text/css" href="basic.css"/>-->
 </body>
 </html>
