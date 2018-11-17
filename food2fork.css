@@ -46,6 +46,10 @@ label {
     text-align: center;
 }
 
+input {
+    max-width: 100%;
+    width: 650px;
+    font-size: 30px;
 .form-group {
     max-width: 100%;
     width: 690px;
@@ -58,6 +62,13 @@ label {
     font-size:30px;
 }
 
+#search {
+    max-width: 100%;
+    width: 650px;
+    font-size: 30px;
+    background: #182837;
+    color: white;
+}
 
 #steak-submit {
     max-width: 100%;
@@ -335,4 +346,3 @@ a.pure-button-primary {
         font-size: 300%;
     }
 }
-
